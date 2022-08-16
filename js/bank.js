@@ -2,6 +2,10 @@ document.getElementById('btn-deposit').addEventListener('click', function () {
     const depositeField = document.getElementById('input-deposit');
     const newDepositAmount = depositeField.value;
     const newDeposit = parseFloat(newDepositAmount);
+    if (newDepositAmount < 10) {
+        alert('বেটা এতো কম দিলে হবে নাকি মিনিমাম ১০ টাকা জমা দে।')
+        return;
+    }
 
     const depositTotalElement = document.getElementById('deposit');
     const previousDepositeTotalString = depositTotalElement.innerText;
@@ -9,10 +13,6 @@ document.getElementById('btn-deposit').addEventListener('click', function () {
 
     const currentDepositTotal = previousDepositeTotal + newDeposit;
 
-    if (newDeposit < 10) {
-        alert('বেটা এতো কম দিলে হবে নাকি মিনিমাম ১০ টাকা জমা দে।')
-        return;
-    }
 
     depositTotalElement.innerText = currentDepositTotal;
 

@@ -4,6 +4,11 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
     const withDrawField = document.getElementById('input-withdraw');
     const newWithDrawAmmountString = withDrawField.value;
     const newWithDrawAmmount = parseFloat(newWithDrawAmmountString);
+    if (newWithDrawAmmountString < 5) {
+        alert('কিপটামি বাদ দে মিনিমাম ৫টাকা তোল।');
+        return;
+    }
+
 
     // step-3 ===============
     const withDrawTotalElement = document.getElementById('withdraw');
@@ -17,7 +22,7 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
     const previousBalance = parseFloat(previousBalanceString);
 
     if (newWithDrawAmmount > previousBalance) {
-        alert("তোর বাপ দাদার সম্পত্তি শেষ। এইবার পথে বসে যা।")
+        alert("তোর বাপ দাদার এত সম্পত্তি নাই। এইবার পথে বসে যা।")
         return;
     }
 

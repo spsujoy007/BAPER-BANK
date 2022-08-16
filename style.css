@@ -1,8 +1,19 @@
+header {
+    margin-top: 40px;
+}
+
 .bodyColor {
     background-color: #bbdfff;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .btnColor {
     background-color: #00aeff;
+}
+
+.bankImg {
+    width: 60px;
+    float: right;
+    margin-top: -50px;
+    ;
 }

@@ -1,0 +1,29 @@
+body {
+    font-family: roboto;
+}
+
+.single-box1 {
+    background-color: #ffb20b;
+}
+
+.single-box2 {
+    background-color: #f5293a;
+}
+
+.single-box3 {
+    background-color: #14c46c;
+}
+
+.single-box4 {
+    background-color: #6200e383;
+}
+
+.inputField {
+    width: 75%;
+    padding: 30px 10px;
+    outline: none;
+}
+
+.btn-color {
+    background-color: #3617e7;
+}

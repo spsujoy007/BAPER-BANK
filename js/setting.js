@@ -9,7 +9,7 @@ document.getElementById('submit-btn').addEventListener('click', function () {
     const password = document.getElementById('user-password');
     const getPassword = password.value;
 
-    if (getEmail === 'spsujoy@gmail.com' && getPassword === '1234') {
+    if (getEmail === 'takachor@gmail.com' && getPassword === '404') {
         window.alert('Login successful');
         window.location.href = 'bank.html';
 

@@ -21,6 +21,9 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
     const previousBalanceString = balanceTotal.innerText;
     const previousBalance = parseFloat(previousBalanceString);
 
+    if (previousBalance === 0) {
+        alert('tui akhon fokir')
+    }
     if (newWithDrawAmmount > previousBalance) {
         alert("তোর বাপ দাদার এত সম্পত্তি নাই। এইবার পথে বসে যা।")
         return;
